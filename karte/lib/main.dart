@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:karte/paginainicial.dart';
+// ignore: unused_import
+import 'package:karte/teladecadastro.dart';
 
 void main() {
   runApp(const MyApp());
