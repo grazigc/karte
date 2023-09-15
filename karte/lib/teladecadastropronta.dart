@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:karte/teladelogin.dart';
 
 class CadastroPage extends StatelessWidget {
   const CadastroPage({Key? key}) : super(key: key);
@@ -37,7 +38,7 @@ class CadastroPage extends StatelessWidget {
                 filled: true,
                 fillColor: Colors.white,
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10.0),
+                  borderRadius: BorderRadius.circular(30),
                 ),
               ),
             ),
@@ -50,7 +51,7 @@ class CadastroPage extends StatelessWidget {
                 filled: true,
                 fillColor: Colors.white,
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10.0),
+                  borderRadius: BorderRadius.circular(30),
                 ),
               ),
             ),
@@ -63,7 +64,7 @@ class CadastroPage extends StatelessWidget {
                 filled: true,
                 fillColor: Colors.white,
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10.0),
+                  borderRadius: BorderRadius.circular(30),
                 ),
               ),
             ),
@@ -76,7 +77,7 @@ class CadastroPage extends StatelessWidget {
                 filled: true,
                 fillColor: Colors.white,
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10.0),
+                  borderRadius: BorderRadius.circular(30),
                 ),
               ),
             ),
@@ -89,7 +90,7 @@ class CadastroPage extends StatelessWidget {
                 filled: true,
                 fillColor: Colors.white,
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10.0),
+                  borderRadius: BorderRadius.circular(30),
                 ),
               ),
             ),
@@ -102,10 +103,36 @@ class CadastroPage extends StatelessWidget {
                 filled: true,
                 fillColor: Colors.white,
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10.0),
+                  borderRadius: BorderRadius.circular(30),
                 ),
               ),
             ),
+            const SizedBox(
+            height: 30,
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const LoginPage()));
+            },
+            child: Container(
+              height: 30,
+              width: 150,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                border: Border.all(color: Colors.white),
+              ),
+              child: const Center(
+                child: Text(
+                  'confirmar',
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              ),
+            ),
+          ),
           ],
         ),
       ),
